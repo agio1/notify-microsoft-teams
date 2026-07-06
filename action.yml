@@ -9,7 +9,19 @@ inputs:
     description: 'JSON object to send to Microsoft Teams'
     required: false
   overwrite:
-    description: 'JSON like object to overwrite default message (executed with eval)'
+    description: '[Deprecated] Use "raw" instead. JSON object to send to Microsoft Teams'
+    required: false
+  title:
+    description: 'Text to show as message title'
+    required: false
+  actions:
+    description: >-
+      JSON array of Adaptive Card Action objects to replace the default action buttons.
+      Leave empty to use the default Repository/Compare buttons.
+      See https://adaptivecards.io/explorer/Action.OpenUrl.html for schema.
+    required: false
+  msteams_emails:
+    description: 'Microsoft teams emails in CSV to tag in the message'
     required: false
   job:
     description: 'JSON parsed job context'
@@ -24,7 +36,7 @@ inputs:
     description: 'Do not actually send the message'
     required: false
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
 branding:
   icon: 'bell'
