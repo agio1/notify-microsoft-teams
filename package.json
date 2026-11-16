@@ -38,16 +38,16 @@
     "ms-teams-webhook": "^2.2.2"
   },
   "devDependencies": {
-    "@babel/cli": "^8.0.6",
-    "@babel/core": "^8.0.9",
+    "@babel/cli": "^8.1.0",
+    "@babel/core": "^8.1.0",
     "@babel/preset-env": "^8.0.7",
     "@eslint/js": "^10.0.1",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/git": "^11.0.1",
     "@vercel/ncc": "^0.38.2",
     "cspell": "^10.4.0",
-    "eslint": "^10.13.0",
-    "globals": "^17.13.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
     "husky": "^9.1.7",
     "jest": "^30.4.2"
   },
